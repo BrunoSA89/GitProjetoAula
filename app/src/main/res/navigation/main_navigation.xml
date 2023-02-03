@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/idTela">
+
+    <fragment
+        android:id="@+id/idTela"
+        android:name="com.example.githubproject.IdTela"
+        android:label="fragment_id_tela"
+        tools:layout="@layout/fragment_id_tela" >
+        <action
+            android:id="@+id/action_idTela_to_recyclerFragment"
+            app:destination="@id/recyclerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerFragment"
+        android:name="com.example.githubproject.RecyclerFragment"
+        android:label="fragment_recycler"
+        tools:layout="@layout/fragment_recycler" />
+</navigation>
